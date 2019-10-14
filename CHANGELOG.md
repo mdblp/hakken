@@ -1,7 +1,7 @@
 # Hakken
 Yourloops discovery platform.  Hakken means "discovery" in Japanese.
 
-## 0.1.11 - 2019-10-14
+## 0.2.0 - 2019-10-14
 ### Changed
 - Integrate tidepool latest version v0.1.11
 - Align our version with tidepool version
