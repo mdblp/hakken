@@ -1,0 +1,7 @@
+module: hakken
+type: nodejs
+runTests: false
+testCommand: npm test
+docker: true
+publishNpm: true
+publishS3: true
