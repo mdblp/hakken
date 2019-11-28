@@ -13,6 +13,7 @@ pipeline {
             steps { 
                 withCredentials([string(credentialsId: 'nexus-token', variable: 'nexus_token')]) {
                     sh 'npm install && npm test'
+                    sh 'npm audit --registry=https://registry.npmjs.org --production'
                 }
                 sh 'sh ./qa/distrib.sh'
                 stash name: "distrib", includes: "**"
