@@ -27,7 +27,7 @@ pipeline {
             }
         }
         stage('Publish') {
-            when { branch "master" }
+            when { branch "dblp" }
             steps {
                 unstash "package"
                 publish()
