@@ -37,7 +37,7 @@
     "mocha": "^6.2.2",
     "sinon": "1.12.2",
     "sinon-chai": "2.7.0",
-    "supertest": "0.15.0"
+    "supertest": "^4.0.2"
   },
   "scripts": {
     "start": "node coordinator.js",
