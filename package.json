@@ -1,6 +1,6 @@
 {
   "name": "hakken",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Discovery Platform",
   "keywords": [
     "discovery"
@@ -41,6 +41,8 @@
   },
   "scripts": {
     "start": "node coordinator.js",
-    "test": "mocha --exit"
+    "test": "mocha --exit",
+    "prebuild-soup": "mkdir -p doc/soup",
+    "build-soup": "release-helper gen-dep-report doc/soup/${npm_package_name}-${npm_package_version}-soup.md"
   }
 }
