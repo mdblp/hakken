@@ -19,6 +19,12 @@ pipeline {
                 stash name: "distrib", includes: "**"
             }
         }
+        stage('Documentation') {
+            steps {
+                unstash "distrib"
+                genDocumentation()
+            }
+        }
         stage('Package') {
             steps {
                 unstash "distrib"
