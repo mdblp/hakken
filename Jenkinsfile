@@ -13,10 +13,16 @@ pipeline {
             steps { 
                 withCredentials([string(credentialsId: 'nexus-token', variable: 'nexus_token')]) {
                     sh 'npm install && npm test'
-                    sh 'npm audit --registry=https://registry.npmjs.org --production'
+                    sh 'npm audit --registry=https://registry.npmjs.org --production --audit-level=moderate'
                 }
                 sh 'sh ./qa/distrib.sh'
                 stash name: "distrib", includes: "**"
+            }
+        }
+        stage('Documentation') {
+            steps {
+                unstash "distrib"
+                genDocumentation()
             }
         }
         stage('Package') {
