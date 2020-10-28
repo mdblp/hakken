@@ -1,4 +1,4 @@
-@Library('mdblp-library') _
+@Library('mdblp-library@feature/review_openapi_publish_trigger') _
 
 pipeline {
     agent any
