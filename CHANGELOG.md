@@ -1,6 +1,10 @@
 # Hakken
 Yourloops discovery platform.  Hakken means "discovery" in Japanese.
 
+## Unreleased
+### Engineering
+- Modify CI parameters to accomodate changes in Jenkins library for publishing SOUP/OPENAPI
+
 ## 0.2.2 - 2020-08-04
 ### Engineering
 - PT-1447 Generate SOUP document
