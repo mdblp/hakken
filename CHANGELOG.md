@@ -1,6 +1,10 @@
 # Hakken
 Yourloops discovery platform.  Hakken means "discovery" in Japanese.
 
+## Unreleased
+### Engineering
+- Do not publish npm pack anymore
+
 ## 0.2.2 - 2020-08-04
 ### Engineering
 - PT-1447 Generate SOUP document
